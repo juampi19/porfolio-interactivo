@@ -346,6 +346,7 @@ body {
   background-color: #1f2937;
   padding: 3rem .5rem;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 .actividad:hover {
