@@ -69,9 +69,14 @@ const comprobarActiviades = () => {
 
 //* eliminamos la activiada
 const eliminarActividad = ( id ) => {
-  activitiesRepo.deleteActivity( id );
-  activitiesRepo.addToLocalStorage();
-  generarHTML();
+  const confirmar = confirm('¿Quieres eliminar esta actividad?');
+
+  if( confirmar ) {
+    activitiesRepo.deleteActivity( id );
+    activitiesRepo.addToLocalStorage();
+    generarHTML();
+    return;
+  }
 }
 
 //* Generar el html con las actividades
