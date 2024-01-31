@@ -1,0 +1,76 @@
+/* Reset de CSS básico */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Margin y padding reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+blockquote,
+figure,
+hr,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+/* Lista reset */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Texto reset */
+a,
+button,
+input,
+select,
+textarea {
+  text-decoration: none;
+}
+
+/* Fuente y tamaño de texto reset */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* Ajuste de estilos predeterminados para algunos elementos */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* Ajuste de estilos predeterminados para algunos elementos */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
